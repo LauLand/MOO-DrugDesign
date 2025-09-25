@@ -1,6 +1,10 @@
 # MOO-DrugDesign
 Jupyter Notebooks detailing the framework from our paper. This step-by-step guide covers the entire process, from ChEMBL data preparation to the analysis of the compounds obtained from the generative AI.
 
+# Pareto-Optimized Reinforcement Learning for Multi-Objective Drug Design
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ### Requirements
 * Python 3.8+
