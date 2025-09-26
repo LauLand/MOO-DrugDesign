@@ -9,7 +9,7 @@ Jupyter Notebooks detailing the framework from our paper. This step-by-step guid
 ### Requirements
 * Python 3.8+
 * Jupyter Notebook or JupyterLab
-* Key libraries: `pandas`, `numpy`, `rdkit`, `scikit-learn`, `matplotlib`, `seaborn`, `pygmo`, `tqdm`
+* Key libraries: `pandas`, `numpy`, `rdkit`, `scikit-learn`, `matplotlib`, `seaborn`
 
 
 ## 📁 Project Structure
@@ -29,7 +29,6 @@ The repository is organized as follows:
 ├── results/
 │   └── (All outputs like cleaned data, plots, and final candidates will be saved here)
 │
-├── requirements.txt
 └── README.md
 ```
 
@@ -48,7 +47,7 @@ The analysis is divided into a series of notebooks that should be run in order. 
 
 ### Step 1: `01_kmeans_sampler.ipynb`
 
-**Purpose:** To generate the objective weight configurations that will guide the generative AI.
+**Purpose:** To generate the weight configurations that will guide the generative AI.
 **Instructions:**
 1.  Open the notebook.
 2.  Adjust parameters like `N_OBJECTIVES` and `N_CLUSTERS` in the **Configuration** cell if needed.
@@ -65,9 +64,9 @@ Use the `01_weights.csv` file generated in the previous step to run your multi-o
 **Purpose:** To analyze the results from the generative runs, identify the Pareto front, and calculate performance metrics.
 **Instructions:**
 1.  Open the notebook.
-2.  In the **Configuration** cell, provide the paths to your method's results file and the baseline's results file.
+2.  In the **Configuration** cell, provide the paths to the .csv generated at the end of the REINVENT run.
 3.  Run all cells.
-4.  A plot comparing the Pareto fronts and a CSV of the non-dominated solutions will be saved in `results/`.
+4.  A plot comparing the Pareto fronts and a CSV with evaluation metrics will be saved in `results/`.
 
 
 ### Step 4: `04_downstream_filtering.ipynb`
@@ -87,8 +86,8 @@ If you use this code in your research, please cite our paper:
 
 ```bibtex
 @article{Landolfi2025,
-  title={Your Paper Title Here},
-  author={Author, A. and Coauthor, B.},
+  title={Finding Balance: Multi-Objective Optimization in Molecular Generative Modeling},
+  author={Landolfi, L. and Janet, JP.},
   journal={Journal Name},
   year={2025},
   volume={X},
