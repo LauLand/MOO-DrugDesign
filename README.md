@@ -66,7 +66,7 @@ Use the `01_weights.csv` file generated in the previous step to run your multi-o
 1.  Open the notebook.
 2.  In the **Configuration** cell, provide the paths to the .csv generated at the end of the REINVENT run.
 3.  Run all cells.
-4.  A plot comparing the Pareto fronts and a CSV with evaluation metrics will be saved in `results/`.
+4.  Plots comparing Pareto fronts and evaluation metrics will be displayed in the notebook.
 
 
 ### Step 3: `03_downstream_filtering.ipynb`
