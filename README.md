@@ -20,8 +20,8 @@ The repository is organized as follows:
 │   ├── 00_chembl_data_preparation.ipynb
 │   ├── 01_kmeans_sampler.ipynb
 │   ├── 02_pareto_analysis.ipynb
-│   ├── 03_chemical_space_analysis.ipynb
-│   └── 04_downstream_filtering.ipynb
+│   └── 03_downstream_filtering.ipynb
+│   
 │
 ├── data/
 │   └── (Place your raw input CSV files here)
@@ -69,7 +69,7 @@ Use the `01_weights.csv` file generated in the previous step to run your multi-o
 4.  A plot comparing the Pareto fronts and a CSV with evaluation metrics will be saved in `results/`.
 
 
-### Step 4: `04_downstream_filtering.ipynb`
+### Step 3: `03_downstream_filtering.ipynb`
 
 **Purpose:** To apply final medicinal chemistry and property-based filters to the Pareto-optimal solutions to select the most promising candidates.
 **Instructions:**
