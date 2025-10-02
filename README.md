@@ -19,8 +19,8 @@ The repository is organized as follows:
 ├── notebooks/
 │   ├── 00_chembl_data_preparation.ipynb
 │   ├── 01_kmeans_sampler.ipynb
-│   ├── 02_pareto_analysis.ipynb
-│   └── 03_downstream_filtering.ipynb
+│   └── 02_pareto_analysis.ipynb
+│   
 │   
 │
 ├── data/
@@ -36,7 +36,7 @@ The repository is organized as follows:
 
 The analysis is divided into a series of notebooks that should be run in order. Before running, place your raw data files in the `data/` directory.
 
-### Step 0: `00_chembl_data_preparation.ipynb` (Optional if needed for QSAR ML Classification model building)
+### Step 0: `00_chembl_data_preparation.ipynb` 
 
 **Purpose:** To clean, filter, and standardize a raw dataset from ChEMBL, making it suitable for modeling.
 **Instructions:**
@@ -45,7 +45,12 @@ The analysis is divided into a series of notebooks that should be run in order. 
 3.  Run all cells (`Cell` > `Run All`).
 4.  A cleaned CSV file will be saved in the `results/` directory.
 
-### Step 1: `01_kmeans_sampler.ipynb`
+### Step 1: QSAR ML Model building (External Step)
+
+This step is performed outside of this repository. Use the CSV file with cleaned data to build your QSAR ML models through QSARtuna as described in Supplementary Information Section 2.
+
+
+### Step 2: `01_kmeans_sampler.ipynb`
 
 **Purpose:** To generate the weight configurations that will guide the generative AI.
 **Instructions:**
@@ -55,11 +60,11 @@ The analysis is divided into a series of notebooks that should be run in order. 
 4.  The output `01_weights.csv` will be saved in the `results/` directory.
 
 
-### Step 2: Run the Generative AI (External Step)
+### Step 3: Run the Generative AI (External Step)
 
 Use the `01_weights.csv` file generated in the previous step to run your multi-objective REINVENT jobs as described in the paper. This step is performed outside of this repository. Ensure all run logs and generated molecules are saved for the next analysis step.
 
-### Step 3: `02_pareto_analysis.ipynb`
+### Step 4: `02_pareto_analysis.ipynb`
 
 **Purpose:** To analyze the results from the generative runs, identify the Pareto front, and calculate performance metrics.
 **Instructions:**
@@ -68,15 +73,6 @@ Use the `01_weights.csv` file generated in the previous step to run your multi-o
 3.  Run all cells.
 4.  Plots comparing Pareto fronts and evaluation metrics will be displayed in the notebook.
 
-
-### Step 3: `03_downstream_filtering.ipynb`
-
-**Purpose:** To apply final medicinal chemistry and property-based filters to the Pareto-optimal solutions to select the most promising candidates.
-**Instructions:**
-1.  Open the notebook.
-2.  The notebook will automatically use the Pareto front CSV from Step 3. You can adjust the filter thresholds in the **Configuration** cell.
-3.  Run all cells.
-4.  A CSV file with the final list of candidate molecules will be saved in `results/`.
 
 ---
 
