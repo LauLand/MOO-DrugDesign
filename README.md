@@ -81,14 +81,21 @@ Use the `01_weights.csv` file generated in the previous step to run your multi-o
 If you use this code in your research, please cite our paper:
 
 ```bibtex
-@article{Landolfi2025,
-  title={Finding Balance: Multi-Objective Optimization in Molecular Generative Modeling},
-  author={Landolfi, L. and Janet, JP.},
-  journal={Journal Name},
-  year={2025},
-  volume={X},
-  pages={Y-Z}
+@article{
+doi:10.26434/chemrxiv-2025-1h1qd,
+author = {Laura Landolfi  and Bruno Catalanotti  and Jon Paul Janet },
+title = {Finding Balance: Multi-Objective Optimization in Molecular Generative Modeling },
+journal = {ChemRxiv},
+volume = {2025},
+number = {0703},
+pages = {},
+year = {2025},
+doi = {10.26434/chemrxiv-2025-1h1qd},
+URL = {https://chemrxiv.org/doi/abs/10.26434/chemrxiv-2025-1h1qd},
+eprint = {https://chemrxiv.org/doi/pdf/10.26434/chemrxiv-2025-1h1qd},
 }
+
+
 ```
 
 ## 📜 License
