@@ -81,6 +81,35 @@ Use the `01_weights.csv` file generated in the previous step to run your multi-o
 If you use this code in your research, please cite our paper:
 
 ```bibtex
+@article{doi:10.1021/acs.jcim.6c00421,
+author = {Landolfi, Laura and Catalanotti, Bruno and Janet, Jon Paul},
+title = {Finding Balance: Multiobjective Optimization in Molecular Generative Modeling},
+journal = {Journal of Chemical Information and Modeling},
+volume = {0},
+number = {0},
+pages = {null},
+year = {0},
+doi = {10.1021/acs.jcim.6c00421},
+
+URL = { 
+    
+        https://doi.org/10.1021/acs.jcim.6c00421
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.1021/acs.jcim.6c00421
+    
+    
+
+}
+
+}
+```
+
+```bibtex
 @article{
 doi:10.26434/chemrxiv-2025-1h1qd,
 author = {Laura Landolfi  and Bruno Catalanotti  and Jon Paul Janet },
